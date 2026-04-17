@@ -1,0 +1,14 @@
+<head>
+  <script>
+    document.write('<canvas id="squeakjs"></canvas>');
+  </script>
+  <!-- Load SqueakJS, Scratch versions were coded in squeak before 2.0 -->
+  <script src="https://scratcharchive.naleksuh.com/squeak.js"/>
+  <script>
+    window.onload = function() {
+      SqueakJS.runSqueak("Scratch.image", squeakjs, {
+        fullscreen: 1 
+      });
+    }
+  </script>
+</head>
